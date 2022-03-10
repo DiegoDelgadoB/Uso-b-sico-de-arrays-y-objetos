@@ -26,7 +26,7 @@ let odonto = [
     {hora: '14:00',medico: 'RAQUEL VILLASECA',nombre: 'ANA SEPULVEDA',rut: '14441281-0',prevision: 'ISAPRE'}
 ];
 
-// RADIO
+// Radiología
 let datos_radio = 
 `<h3>Radiología</h3>
 <tr> 
@@ -52,7 +52,7 @@ document.getElementById("texto_radio").innerHTML = `<strong>Primera atención</s
 document.getElementById("table_radio").innerHTML = datos_radio;
 
 
-// TRAUMA
+// Traumatología
 let datos_trauma =
     "<h3>Traumatología</h3><tr> <th>Hora de reserva</th> <th>Doctor</th> <th>Paciente</th> <th>Rut del paciente</th> <th>Previsión del paciente</th> </tr>"
 for (let j = 0; j < trauma.length; j++) {
@@ -68,7 +68,7 @@ for (let j = 0; j < trauma.length; j++) {
 document.getElementById("texto_trauma").innerHTML = `<strong>Primera atención</strong>: ${trauma[0].nombre} - ${trauma[0].prevision} | <strong>Última atención</strong>: ${trauma[(trauma.length-1)].nombre} - ${trauma[(trauma.length-1)].prevision}`
 document.getElementById("table_trauma").innerHTML = datos_trauma;
 
-// ODONTO
+// Odontología
 let datos_odonto =
     "<h3>Dental</h3> <tr> <th>Hora de reserva</th> <th>Doctor</th> <th>Paciente</th> <th>Rut del paciente</th> <th>Previsión del paciente</th> </tr>"
 
